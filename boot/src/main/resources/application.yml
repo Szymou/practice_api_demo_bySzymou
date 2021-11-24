@@ -1,0 +1,15 @@
+server:
+  port: 8089
+  servlet:
+    context-path: /szymou
+
+
+
+aliyun:
+  AccessKeyId: LTAI5tMSqrau3GMU7vqfKzQo # 阿里云AccessKeyId
+  AccessKeySecret: pmSFuB0eU0hDx3yAgbKuEhZsul7zws # 阿里云AccessKeySecret
+  bucketName: oss-szymou  # bucket
+
+
+
+
