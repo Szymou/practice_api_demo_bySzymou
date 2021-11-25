@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.io.File;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -52,6 +53,19 @@ public class OssUtil {
     }
 
     /**
+     * 获取临时object url
+     * @param objectPath
+     * @param objectKey
+     * @return
+     */
+    public String getTempUrl(String objectPath, String objectKey){
+        OSS ossClient = checkBucketExist();
+        Date date = new Date(System.currentTimeMillis() + 36000000 * 10000000);//
+        String url = ossClient.generatePresignedUrl(bucketName, objectPath + objectKey, date).toString();
+        return url;
+    }
+
+    /**
      * 下载文件
      * @param objectPath 目录
      * @param objectKey  文件对象名
@@ -80,6 +94,7 @@ public class OssUtil {
 
         ossClient.shutdown();
         logger.info("删除文件over");
+
     }
 
 

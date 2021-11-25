@@ -23,6 +23,11 @@ public class ExecuteController {
         ossUtil.uploadSomethings(objectPath, objectKey);
     }
 
+    @GetMapping("getTempUrl")
+    public String getTempUrl(String objectPath, String objectKey){
+        return ossUtil.getTempUrl(objectPath, objectKey);
+    }
+
     @GetMapping("downloadOss")
     public void downloadOss(String objectPath, String objectKey){
         ossUtil.downloadSomethings(objectPath, objectKey);
