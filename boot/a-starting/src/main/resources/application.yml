@@ -9,7 +9,7 @@ aliyun:
   AccessKeyId: LTAI5tMSqrau3GMU7vqfKzQo # 阿里云AccessKeyId
   AccessKeySecret: pmSFuB0eU0hDx3yAgbKuEhZsul7zws # 阿里云AccessKeySecret
   bucketName: oss-szymou  # bucket
-
+  endpoint: oss-cn-shenzhen.aliyuncs.com #阿里云内网oss-cn-shenzhen-internal.aliyuncs.com
 
 
 

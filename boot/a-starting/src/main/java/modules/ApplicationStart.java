@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 
 /**
@@ -12,6 +13,7 @@ import org.springframework.context.ConfigurableApplicationContext;
  * @date 2021/7/28 16:14
  */
 @SpringBootApplication
+@ComponentScan(basePackages = {"modules"})
 public class ApplicationStart extends SpringBootServletInitializer {
 
     @Override

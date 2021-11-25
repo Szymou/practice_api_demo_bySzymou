@@ -11,5 +11,14 @@
 
     <artifactId>oss-demo</artifactId>
 
+    <dependencies>
+
+        <dependency>
+            <groupId>com.aliyun.oss</groupId>
+            <artifactId>aliyun-sdk-oss</artifactId>
+            <version>3.11.2</version>
+        </dependency>
+
+    </dependencies>
 
 </project>
